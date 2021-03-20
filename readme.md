@@ -1,5 +1,7 @@
 # rehype-img-size
 
+[![main](https://github.com/ksoichiro/rehype-img-size/actions/workflows/main.yaml/badge.svg?branch=master)](https://github.com/ksoichiro/rehype-img-size/actions/workflows/main.yaml)
+
 rehype plugin to set local image size properties to img tag.
 
 ## Install

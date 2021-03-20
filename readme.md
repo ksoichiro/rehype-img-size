@@ -65,6 +65,18 @@ Supported formats depend on [image-size](https://www.npmjs.com/package/image-siz
 Directory to resolve image file path.
 This is useful when Markdown files and image files are located in the separate directories.
 
+## nuxt/content
+
+If you use this plugin for [nuxt/content](https://content.nuxtjs.org/), you can use it by configuring your `nuxt.config.js` like below:
+
+```js
+content: {
+  markdown: {
+    rehypePlugins: [
+      [ 'rehype-img-size', { dir: 'static' } ]
+    ],
+```
+
 ## License
 
 MIT &copy; ksoichiro

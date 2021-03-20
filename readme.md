@@ -1,6 +1,7 @@
 # rehype-img-size
 
 [![main](https://github.com/ksoichiro/rehype-img-size/actions/workflows/main.yaml/badge.svg?branch=master)](https://github.com/ksoichiro/rehype-img-size/actions/workflows/main.yaml)
+[![npm](https://img.shields.io/npm/v/rehype-img-size.svg)](https://www.npmjs.com/package/rehype-img-size)
 
 rehype plugin to set local image size properties to img tag.
 

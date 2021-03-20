@@ -6,6 +6,8 @@
 
 **[rehype](https://github.com/rehypejs/rehype)** plugin to set local image size properties to img tag.
 
+This can be used to improve *Cumulative Layout Shift*: [Images without dimensions](https://web.dev/optimize-cls/#images-without-dimensions)
+
 ## Install
 
 ```

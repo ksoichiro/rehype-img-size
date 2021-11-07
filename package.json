@@ -10,6 +10,9 @@
         "size",
         "html"
     ],
+    "engines": {
+      "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+    },
     "type": "module",
     "repository": "ksoichiro/rehype-img-size",
     "bugs": "https://github.com/ksoichiro/rehype-img-size/issues",

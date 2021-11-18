@@ -20,9 +20,15 @@ function setImageSize(options) {
         if (dir && src.startsWith('/')) {
             src = path.join(dir, src)
         }
-        const dimensions = sizeOf(src)
-        node.properties.width = dimensions.width
-        node.properties.height = dimensions.height
+        
+        try {
+          const dimensions = sizeOf(src)
+          node.properties.width = dimensions.width
+          node.properties.height = dimensions.height
+        }
+        catch {
+          // do nothing 
+        }
       }
     }
   }

@@ -17,8 +17,13 @@ function setImageSize(options) {
         if (src.startsWith('http')) {
             return
         }
-        if (dir && src.startsWith('/')) {
-            src = path.join(dir, src)
+        const shouldJoin =
+          src.startsWith('/') ||
+          src.startsWith('./') ||
+          /^\w/.exec(src);
+
+        if (dir && shouldJoin) {
+          src = path.join(dir, src);
         }
         
         try {

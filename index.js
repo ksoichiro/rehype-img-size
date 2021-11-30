@@ -4,6 +4,8 @@ import sizeOf from 'image-size'
 
 export default setImageSize
 
+const absolutePathRegex = /^(?:[a-z]+:)?\/\//;
+
 function setImageSize(options) {
   const opts = options || {}
   const dir = opts.dir
@@ -14,13 +16,11 @@ function setImageSize(options) {
     function visitor(node) {
       if (node.tagName === 'img') {
         let src = node.properties.src
-        if (src.startsWith('http')) {
+        if (absolutePathRegex.exec(src)) {
             return
         }
-        const shouldJoin =
-          src.startsWith('/') ||
-          src.startsWith('./') ||
-          /^\w/.exec(src);
+        // Treat `/` as a relative path, according to the server
+        const shouldJoin = !path.isAbsolute(src) || src.startsWith('/');
 
         if (dir && shouldJoin) {
           src = path.join(dir, src);

@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "devDependencies": {
+    "rehype-img-size": "file:../..",
+    "rehype-stringify": "^8.0.0",
+    "remark-parse": "^9.0.0",
+    "remark-rehype": "^8.1.0",
+    "to-vfile": "^6.1.0",
+    "unified": "^9.2.2"
+  }
+}

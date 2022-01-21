@@ -25,12 +25,12 @@ Say we have the following file, `index.md`:
 And our script, `example.js`, looks as follows:
 
 ```js
-const unified = require('unified')
-const parse = require('remark-parse')
-const remark2rehype = require('remark-rehype')
-const stringify = require('rehype-stringify')
-const vfile = require('to-vfile')
-const rehypeImgSize = require('rehype-img-size')
+import {unified} from 'unified'
+import parse from 'remark-parse'
+import remark2rehype from 'remark-rehype'
+import stringify from 'rehype-stringify'
+import * as vfile from 'to-vfile'
+import rehypeImgSize from 'rehype-img-size'
 
 unified()
   .use(parse)
@@ -39,7 +39,7 @@ unified()
   .use(stringify)
   .process(vfile.readSync('index.md'), function(err, file) {
     if (err) throw err
-    console.log(file.contents)
+    console.log(file.value)
   })
 ```
 
@@ -48,6 +48,10 @@ Now, running `node example` yields:
 ```html
 <p><img src="img.png" alt="" width="640" height="480"></p>
 ```
+
+See examples/esm directory for the entire code.
+
+You can also keep using this as a CommonJS package. See examples/cjs directory.
 
 ## API
 

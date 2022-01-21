@@ -26,6 +26,7 @@
         "import": "./index.js",
         "require": "./cjs/index.cjs"
     },
+    "types": "./index.d.ts",
     "files": [
         "index.js",
         "cjs/index.cjs"

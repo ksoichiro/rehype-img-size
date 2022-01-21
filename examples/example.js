@@ -12,5 +12,5 @@ unified()
   .use(stringify)
   .process(vfile.readSync('index.md'), function(err, file) {
     if (err) throw err
-    console.log(file.contents)
+    console.log(file.value)
   })

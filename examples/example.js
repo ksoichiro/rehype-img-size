@@ -3,7 +3,7 @@ import parse from 'remark-parse'
 import remark2rehype from 'remark-rehype'
 import stringify from 'rehype-stringify'
 import * as vfile from 'to-vfile'
-import rehypeImgSize from '../index'
+import rehypeImgSize from 'rehype-img-size'
 
 unified()
   .use(parse)

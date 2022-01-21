@@ -2,6 +2,6 @@
   "private": true,
   "type": "module",
   "devDependencies": {
-    "rehype-img-size": "file:.."
+    "rehype-img-size": "file:../.."
   }
 }

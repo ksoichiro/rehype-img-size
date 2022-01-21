@@ -43,13 +43,15 @@ unified()
   })
 ```
 
-Note that `"type": "module"` must be set in your package.json.
-
 Now, running `node example` yields:
 
 ```html
 <p><img src="img.png" alt="" width="640" height="480"></p>
 ```
+
+See examples/esm directory for the entire code.
+
+You can also keep using this as a CommonJS package. See examples/cjs directory.
 
 ## API
 

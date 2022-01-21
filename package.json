@@ -1,6 +1,6 @@
 {
     "name": "rehype-img-size",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "rehype plugin to set local image size properties to img tag",
     "license": "MIT",
     "keywords": [

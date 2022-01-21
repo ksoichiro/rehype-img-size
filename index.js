@@ -4,6 +4,13 @@ import sizeOf from 'image-size'
 
 export default setImageSize
 
+/**
+ * Handles:
+ * "//"
+ * "http://"
+ * "https://"
+ * "ftp://"
+ */
 const absolutePathRegex = /^(?:[a-z]+:)?\/\//;
 
 export function getImageSize(src, dir) {

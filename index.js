@@ -1,8 +1,8 @@
-const path = require('path')
-const visit = require('unist-util-visit')
-const sizeOf = require('image-size')
+import path from 'path'
+import {visit} from 'unist-util-visit'
+import sizeOf from 'image-size'
 
-module.exports = setImageSize
+export default setImageSize
 
 function setImageSize(options) {
   const opts = options || {}

@@ -1,9 +1,9 @@
-const unified = require('unified')
-const parse = require('remark-parse')
-const remark2rehype = require('remark-rehype')
-const stringify = require('rehype-stringify')
-const vfile = require('to-vfile')
-const rehypeImgSize = require('../index')
+import {unified} from 'unified'
+import parse from 'remark-parse'
+import remark2rehype from 'remark-rehype'
+import stringify from 'rehype-stringify'
+import * as vfile from 'to-vfile'
+import rehypeImgSize from '../index'
 
 unified()
   .use(parse)

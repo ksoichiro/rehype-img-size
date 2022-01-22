@@ -29,6 +29,7 @@
     "types": "./index.d.ts",
     "files": [
         "index.js",
+        "index.d.ts",
         "cjs/index.cjs"
     ],
     "devDependencies": {

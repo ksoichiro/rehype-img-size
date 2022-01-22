@@ -13,7 +13,7 @@ export default setImageSize
  */
 const absolutePathRegex = /^(?:[a-z]+:)?\/\//;
 
-export function getImageSize(src, dir) {
+function getImageSize(src, dir) {
   if (absolutePathRegex.exec(src)) {
     return
   }

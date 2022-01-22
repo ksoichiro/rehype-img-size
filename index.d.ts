@@ -10,5 +10,3 @@ import type {Plugin} from 'unified'
 declare const rehypeImgSize: Plugin<[Options] | [], Root, string>
 export default rehypeImgSize
 export type {Options}
-
-export function getImageSize(src: string, dir?: string): ISize;

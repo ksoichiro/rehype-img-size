@@ -5,7 +5,13 @@ import stringify from 'rehype-stringify'
 import * as vfile from 'to-vfile'
 import rehypeImgSize from './index'
 
-process.chdir('fixtures')
+beforeAll(() => {
+  process.chdir('fixtures')
+})
+
+afterAll(() => {
+  process.chdir('..')
+})
 
 test('images in the same directory', (done) => {
   unified()

@@ -3,5 +3,8 @@
   "type": "module",
   "devDependencies": {
     "rehype-img-size": "file:../.."
+  },
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   }
 }

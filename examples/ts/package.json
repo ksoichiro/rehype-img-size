@@ -1,12 +1,13 @@
 {
   "private": true,
   "type": "module",
-  "scripts": {
-    "build": "tsc -p ."
-  },
   "devDependencies": {
     "@types/node": "^17.0.10",
     "rehype-img-size": "file:../..",
     "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   }
 }

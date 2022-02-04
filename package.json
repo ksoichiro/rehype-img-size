@@ -49,7 +49,7 @@
         "unist-util-visit": "^4.1.0"
     },
     "scripts": {
-        "postinstall": "(cd examples/cjs && npm i); (cd examples/esm && npm i); (cd examples/ts && npm i)",
+        "build:example": "(cd examples/cjs && npm i); (cd examples/esm && npm i); (cd examples/ts && npm i)",
         "pretest": "(npm run build) && (cd examples/cjs && npm run build --if-present); (cd examples/esm && npm run build --if-present); (cd examples/ts && npm run build --if-present)",
         "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
         "build": "rollup --config --file cjs/index.cjs"

@@ -1,12 +1,12 @@
-import {ISize} from "image-size/dist/types/interface";
-import type {Root} from 'hast'
+import type { Plugin } from "unified";
+import type { Root } from "hast";
+
 interface Options {
   dir: string;
 }
-import type {Plugin} from 'unified'
 
-// Note: defining all nodes here, such as with `Root | Element | ...` seems
-// to trip TS up.
-declare const rehypeImgSize: Plugin<[Options] | [], Root, string>
-export default rehypeImgSize
-export type {Options}
+// If the plugin returns a transformer, then the `Output` type should be
+// the node type that the transformer yields
+declare const rehypeImgSize: Plugin<[Options?], Root, Root>;
+export default rehypeImgSize;
+export type { Options };
